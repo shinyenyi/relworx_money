@@ -23,7 +23,7 @@ body {
 
 .wrapper {
     overflow: hidden;
-    max-width: 390px;
+    max-width: 600px;
     background: #fff;
     padding: 30px;
     border-radius: 15px;
@@ -213,4 +213,8 @@ form .btn input[type="submit"] {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+}
+
+td {
+    text-align: center;
 }

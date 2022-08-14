@@ -23,7 +23,6 @@ function logIn() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let users = Array.from(JSON.parse(localStorage.getItem("users") || '[]'));
-    console.log(users);
 
     for (let i = 0; i < users.length; i++) {
         if (email === users[i].email && password === users[i].password) {
@@ -55,12 +54,14 @@ function signUp() {
     let user = users.find(o => o.email === email);
 
     if (!user) {
-        user = { email: email, password: password };
+        user = { email: email, password: password, balance: 0 };
         users.push(user);
         localStorage.setItem("users", JSON.stringify(users));
         loginBtn.click();
         alert('please login');
-        return false;
+        return;
+    } else {
+        alert('email already exists');
     }
-    return false;
+    return;
 }

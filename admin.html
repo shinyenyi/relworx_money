@@ -10,7 +10,26 @@
 </head>
 
 <body>
-    <div class="title-text" id="title-text"></div>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title"></div>
+        </div>
+        <input type="text" id="search" placeholder="search by email...">
+        <div class="form-container">
+            <table class="table">
+                <tr>
+                    <th>Email</th>
+                    <th>Balance</th>
+                    <th>Deposit</th>
+                </tr>
+                <tbody id="tableId"></tbody>
+            </table>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" onclick="return logOut()" value="LogOut">
+            </div>
+        </div>
+    </div>
     <script src="admin.js"></script>
 </body>
 
