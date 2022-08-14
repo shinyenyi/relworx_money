@@ -10,7 +10,21 @@
 </head>
 
 <body>
-    <div class="title-text"></div>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title"></div>
+        </div>
+        <div class="container">
+            <input type="submit" style="margin-bottom: 10px;" id="checkBalance" onclick="return checkBalance()" value="Check Balance">
+            <input type="email" style="margin-bottom: 10px;" id="reciever" placeholder="enter email..." required>
+            <input type="number" style="margin-bottom: 10px;" id="amount" placeholder="enter amount..." required>
+            <input type="submit" style="margin-bottom: 10px;" id="sendMoney" onclick="return sendMoney()" value="Send Money">
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" onclick="return logOut()" value="LogOut">
+            </div>
+        </div>
+    </div>
     <script src="user.js"></script>
 </body>
 

@@ -218,3 +218,9 @@ form .btn input[type="submit"] {
 td {
     text-align: center;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
