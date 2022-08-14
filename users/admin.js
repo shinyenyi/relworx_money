@@ -55,12 +55,12 @@ function buildTable(data) {
 
 function logOut() {
     sessionStorage.clear();
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
     return false;
 }
 
 function viewTransactions(){
-    window.location.href = "transactions.html";
+    window.location.href = "../transactions/transactions.html";
     return false;
 }
 

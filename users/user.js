@@ -6,7 +6,7 @@ let balance = user.balance;
 
 function logOut() {
     sessionStorage.clear();
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
     return false;
 }
 
@@ -53,6 +53,6 @@ function sendMoney() {
 }
 
 function viewTransactions(){
-    window.location.href = "transactions.html";
+    window.location.href = "../transactions/transactions.html";
     return false;
 }

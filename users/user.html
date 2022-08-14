@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +14,11 @@
         <div class="title-text">
             <div class="title"></div>
         </div>
-        <input type="text" id="search" placeholder="search by email...">
-        <div class="form-container">
-            <table class="table">
-                <tr>
-                    <th>Email</th>
-                    <th>Balance</th>
-                    <th>Deposit</th>
-                </tr>
-                <tbody id="tableId"></tbody>
-            </table>
+        <div class="container">
+            <input type="submit" style="margin-bottom: 10px;" id="checkBalance" onclick="return checkBalance()" value="Check Balance">
+            <input type="email" style="margin-bottom: 10px;" id="reciever" placeholder="enter email..." required>
+            <input type="number" style="margin-bottom: 10px;" id="amount" placeholder="enter amount..." required>
+            <input type="submit" style="margin-bottom: 10px;" id="sendMoney" onclick="return sendMoney()" value="Send Money">
             <div class="field btn">
                 <div class="btn-layer"></div>
                 <input type="submit" style="margin-right: 20px;" onclick="return viewTransactions()" value="View Transactions">
@@ -31,7 +26,7 @@
             </div>
         </div>
     </div>
-    <script src="admin.js"></script>
+    <script src="user.js"></script>
 </body>
 
 </html>

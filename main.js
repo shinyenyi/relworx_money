@@ -28,11 +28,11 @@ function logIn() {
         if (email === users[i].email && password === users[i].password) {
             if (email === "admin@gmail.com") {
                 sessionStorage.setItem("email", email);
-                window.location.href = "admin.html";
+                window.location.href = "users/admin.html";
                 return false;
             }
             sessionStorage.setItem("email", email);
-            window.location.href = "user.html";
+            window.location.href = "users/user.html";
             return false;
         }
     }
