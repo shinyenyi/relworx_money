@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -8,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relworx</title>
 </head>
-
 <body>
     <div class="wrapper">
         <div class="title-text">
@@ -18,20 +16,19 @@
         <div class="form-container">
             <table class="table">
                 <tr>
-                    <th>Email</th>
-                    <th>Balance</th>
-                    <th>Deposit</th>
+                    <th>Sender</th>
+                    <th>Reciever</th>
+                    <th>Amount</th>
                 </tr>
                 <tbody id="tableId"></tbody>
             </table>
             <div class="field btn">
                 <div class="btn-layer"></div>
-                <input type="submit" style="margin-right: 20px;" onclick="return viewTransactions()" value="View Transactions">
+                <input type="submit" style="margin-right: 20px;" onclick="history.back()" value="Back">
                 <input type="submit" onclick="return logOut()" value="LogOut">
             </div>
         </div>
     </div>
-    <script src="admin.js"></script>
+    <script src="transaction.js"></script>
 </body>
-
 </html>

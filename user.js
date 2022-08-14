@@ -51,3 +51,8 @@ function sendMoney() {
     window.location.reload();
     return false;
 }
+
+function viewTransactions(){
+    window.location.href = "transactions.html";
+    return false;
+}

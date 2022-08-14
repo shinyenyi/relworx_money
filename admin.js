@@ -17,7 +17,7 @@ function filter(e) {
     );
     if (results.length > 0) {
         results.forEach((row, index) => {
-            temp = `
+            temp += `
                 <tr>
                     <td>${row.email}</td>
                     <td>${row.balance}</td>
@@ -56,6 +56,11 @@ function buildTable(data) {
 function logOut() {
     sessionStorage.clear();
     window.location.href = "index.html";
+    return false;
+}
+
+function viewTransactions(){
+    window.location.href = "transactions.html";
     return false;
 }
 
